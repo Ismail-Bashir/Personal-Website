@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6edfa1291a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+   <div id = "header">
+   
+       <div class="container">
+
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#services">Services</a></li>
+                <li> <a href="#portfolio">Portfolio</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+         </nav>
+
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'am <span>Ismail</span> <br>Ahmed from Canada</h1>
+            
+
+        </div>
+
+       </div>
+
+
+   </div>
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    My name is Ismail Ahmed.I specialize in developing robust, scalable, and efficient 
+                    software solutions. My expertise lies in a range of programming 
+                    languages, including Python, Java, and C++, which allows me to approach
+                     problems with a versatile mindset. I am particularly adept at full-stack 
+                     development, ensuring that both the front-end and back-end aspects of 
+                     a project are seamlessly integrated.Beyond my technical skills, 
+                     I am a strong team player, known for my ability to collaborate
+                      effectively with cross-functional teams. I believe in continuous
+                       learning and stay updated with the latest industry trends and technologies, 
+                       which enables me to bring a fresh perspective to every project I undertake.
+
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('eperience')">Experience</p>
+                    <p class="tab-links " onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2018-2024</span><br>BSc in Computer Sci from University of Toronto</li>
+                    </ul>
+            </div>
+        </div>
+
+    </div>
+   </div>
+
+
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I specialize in creating stunning,
+                     user-friendly websites that help businesses 
+                     establish a compelling online presence.
+                      My approach combines aesthetic appeal with 
+                      functional design, ensuring that every website we 
+                      craft is not only visually striking but also highly 
+                      intuitive and easy to navigate.</p>
+                      <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>My UI/UX Design Services are centered 
+                    around creating user interfaces and experiences that 
+                    are not only visually compelling but also highly intuitive
+                     and user-centric. We understand that the success of digital products 
+                     lies in their ease of use and the engagement they offer to the end-user.</p>
+                      <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>My App Design Services 
+                    are dedicated to creating outstanding
+                     mobile applications that offer both exceptional 
+                     user experiences and aesthetic appeal. We understand 
+                     the importance of blending functionality with design to 
+                     create apps that are not only visually captivating but also 
+                     intuitive and user-friendly.</p>
+                      <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Solcial Media App</h3>
+                    <p>The app connects you to talented people around the world</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app lets you play your favourite music</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app lets you buy items online</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+
+    </div>
+   </div>
+
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/esmaelbashkar"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ismail-ahmed-b83b081aa/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+                    <input type="text" name = "Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ismail</p>
+    </div>
+   </div>
+    
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemenu.style.right="0";
+  }
+  function closemenu(){
+    sidemenu.style.right="-200px";
+  }
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwrIRvCe5ZUBuaSBiF1nMUMd5Y-h7PQ4fEbGP6zwlJmqzSfrf5aQ7Rn6I_eqw0TmSKayA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
