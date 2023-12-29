@@ -141,6 +141,12 @@ nav ul li a:hover::after{
     margin: 10px 0;
 
 }
+
+.tab-contents ul li a{
+    list-style:none;
+    margin: 10px 0;
+
+}
 .tab-contents  ul li span{
     color:#b54769;
     font-size: 14px;
@@ -357,10 +363,6 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 600px){
-    #header{
-        background-image:url(images/background.png);
-
-    }
     .header-text{
         margin-top: 100%;
         font-size:16px;
